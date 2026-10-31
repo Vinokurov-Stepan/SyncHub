@@ -6,7 +6,8 @@ ktor = "3.0.0"
 room = "2.7.0-alpha11"
 sqlite = "2.5.0-SNAPSHOT"
 coroutines = "1.9.0"
-ksp = "2.1.0-1.0.29"
+ksp = "2.1.0-1.0.29
+serialization = "1.7.3"
 
 [libraries]
 # Coroutines
@@ -16,6 +17,10 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-c
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
 ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
+
+# Kotlinx Serialization
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
 
 # Room KMP (Локальная база данных)
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
@@ -36,3 +41,4 @@ androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 room = { id = "androidx.room", version.ref = "room" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
